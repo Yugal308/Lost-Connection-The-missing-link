@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <script src="script.js" defer></script>
+    <title>Registraion Form</title>
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="text-center">Details of the missing person</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="1"
+        ></div>
+        <div class="progress-step" data-title="2"></div>
+        <div class="progress-step" data-title="3"></div>
+        <div class="progress-step" data-title="4"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="username">NAME</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="input-group">
+          <label for="age">AGE</label>
+          <input type="text" name="age" id="age" />
+        </div>
+        <div class="input-group">
+          <label for="height">HEIGHT</label>
+          <input type="text" name="height" id="height" />
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="gender">GENDER</label>
+          <input type="radio" value="male" style="vertical-align: middle;" />Male
+          <input type="radio" value="female" style="vertical-align: middle;" />Female
+        </div>
+        <div class="input-group">
+          <label for="date">DATE WHEN THE PERSON WAS LAST SEEN</label>
+          <input type="text" name="date" id="date" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="location">LOCATION WHERE THE PERSON WAS LAST SEEN</label>
+          <input type="text" name="location" id="location" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+      </div>  
+      <div class="form-step">
+        <div class="input-group">
+          <label for="description">DESCRIPTION OF THE PERSON MISSING BASED ON THE OUTER APPEARANCE</label>
+          <input type="text" name="description" id="description" />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
